@@ -1,0 +1,20 @@
+{
+  "name": "@monorepo-template/app1",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "sst shell vitest"
+  },
+  "exports": {
+    "./*": [
+      "./src/*/index.ts",
+      "./src/*.ts"
+    ]
+  },
+  "dependencies": {
+    "sst": "*"
+  },
+  "devDependencies": {
+    "vitest": "^2"
+  }
+}
